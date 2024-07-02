@@ -1,0 +1,20 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data/genres_original
+  features_path: artifacts/data/features
+
+data_transformation:
+  features_path: artifacts/data/features
+
+model_trainer:
+  features_path: artifacts/data/features
+  save_model_path: artifacts/models
+
+
+model_evaluation:
+  features_path: artifacts/data/features
+  save_model_path: artifacts/models
+  metrics_path: artifacts/performance
+  plots_path: artifacts/plots
